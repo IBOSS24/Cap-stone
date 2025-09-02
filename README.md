@@ -114,7 +114,7 @@ jupyter trust path/to/notebook.ipynb
 
 ### 6) Modeling & evaluation
 - Train and evaluate in `SpaceX_Machine Learning Prediction_Part_5.ipynb` using `dataset_part_3.csv` (modeling‑ready features).
-- Report: **Precision/Recall/F1**, **ROC‑AUC**, **PR‑AUC** (recommended under imbalance), confusion matrix, and **calibration** (Brier/log loss). Select threshold tied to the problem goal (e.g., favor recall).
+- Report: **Precision/Recall/F1**,  confusion matrix. Select threshold tied to the problem goal (e.g., favor recall).
 
 ---
 
@@ -142,23 +142,9 @@ The app provides:
 
 ---
 
-## Results & reporting
-- Place figures (confusion matrix, ROC/PR curves, reliability diagram) in `reports/figures/`.
-- Summarize metrics in `reports/tables/` and the README.
-- When reporting, prefer **PR‑AUC** for imbalanced positive class and document the **chosen threshold** and its business trade‑off.
-
----
-
-## Tips & quality
-- Use **stratified splits** and avoid leakage (fit scalers/encoders inside pipelines).
-- Set **random seeds** throughout (`numpy`, `sklearn`) to improve reproducibility.
-- Consider `GridSearchCV` / `RandomizedSearchCV` for tuning and log results.
-- Add `requirements.txt` and optionally a Conda `environment.yml` for portability.
-
----
 
 ## Acknowledgments
-- Educational SpaceX dataset and open web sources used for learning.
+- Educational SpaceX dataset and open IBM SKillNetwork sources used for learning.
 - pandas, scikit-learn, matplotlib, seaborn, plotly/dash, folium communities.
 
 ---
